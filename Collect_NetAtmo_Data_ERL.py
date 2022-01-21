@@ -6,6 +6,7 @@ Created on Tue Mar 23 10:56:17 2021
 
 INFO:
 This script is the second to run after Collect_NetAtmo_Data_Tile_ERL.py
+It is adapted from the script by Vanter et al. (2020)
 It will download hourly measurements of Citizen Weather Stations repertoriated in the list compiled in the prior script
 """
 
