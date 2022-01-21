@@ -6,6 +6,7 @@ Created on Tue Mar 23 10:56:17 2021
 
 INFO:
 This script is the first to run prior to Collect_NetAtmo_Data_ERL.py
+It is adapted from the script by Vanter et al. (2020)
 It compiles a list of available stations in the domain of interest
 """
 
