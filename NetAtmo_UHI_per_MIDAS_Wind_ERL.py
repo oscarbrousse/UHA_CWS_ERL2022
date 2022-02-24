@@ -1302,9 +1302,9 @@ if plot_tab1 == True:
     prevail_winds = df.Wind_Quadrant.mask(df.normalized_wind_speed.isnull())
     
     for wd in wind_dir_name:
-        tmp_df_wd_bc_upw = NA_filt_GL_df.loc[prevail_winds == wd] - NA_filt_GL_df.apply(np.nanmean, axis=0)
+        tmp_df_wd_bc_upw = NA_filt_GL_df.loc[prevail_winds == wd]
         tmp_df_wd_bc_dow = NA_filt_GL_df.loc[(~prevail_winds.str.contains(wd[0], na=False)) &
-                                             (~prevail_winds.str.contains(wd[1], na=False))] - NA_filt_GL_df.apply(np.nanmean, axis=0)
+                                             (~prevail_winds.str.contains(wd[1], na=False))]
         for lcz in range(1,17):
             ### Count how many LCZs are in
             lcz_num = len(spat_attributes_by_ID_GL[spat_attributes_by_ID_GL['LCZ'] == lcz])
