@@ -21,3 +21,6 @@ The MIDAS CSV data comes in a specific structure. We standardize the data struct
 4. **Data treatment and visualisation**
 For visualising where the CWS data are located over a Local Climate Zones map, one has to use the DataLocation_LCZMap_Domains_ERL.py script. For calculating the urban heat advection (UHA) and obtaining all the results presented in the manuscript concerning the urban temperatures and the daily temperature ranges measured by CWS, the NetAtmo_UHI_per_MIDAS_Wind_ERL.py script has to be used. In this script, MIDAS wind orientations and speeds are classified into prevailing wind categories (see the manuscript's methods for more info) that serve the calculation of the UHA.
 
+### Additional tools:
+
+The MIDAS_Wind_Comparison.py script can be run to compare the official AWS against others in the urban environment to see how often the prevailing wind characterized at the chose AWS is consistent with other surrounding stations.
